@@ -10,7 +10,7 @@ interface Task {
 export default function TodoList() {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [newTask, setNewTask] = useState<string>("");
-  const API_URL = "/api/game";
+  const API_URL = "/app/api/game/route.ts";
 
   useEffect(() => {
     const fetchTasks = async () => {
